@@ -1024,6 +1024,95 @@
 					"body": "Deleted."
 				}
 			]
+		},
+		{
+			"name": "[POST] getUserBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "seven.m",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/getUserBook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"getUserBook"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "[POST] getBook",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "seven.m",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/getBook",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"getBook"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1490"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5d2-NvwMl9Bs4czg0Om/cBgQm+TzPPo\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 Mar 2020 20:30:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"bookID\": 1,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": \"100.00\"\n    },\n    {\n        \"bookID\": 2,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": \"100.00\"\n    },\n    {\n        \"bookID\": 3,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": \"100.00\"\n    },\n    {\n        \"bookID\": 4,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": \"100.00\"\n    },\n    {\n        \"bookID\": 5,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": \"100.00\"\n    },\n    {\n        \"bookID\": 6,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": \"100.00\"\n    },\n    {\n        \"bookID\": 7,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": \"100.00\"\n    },\n    {\n        \"bookID\": 8,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": \"100.00\"\n    },\n    {\n        \"bookID\": 9,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": \"100.00\"\n    },\n    {\n        \"bookID\": 10,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": \"100.00\"\n    },\n    {\n        \"bookID\": 11,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": \"100.00\"\n    },\n    {\n        \"bookID\": 12,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": \"100.00\"\n    },\n    {\n        \"bookID\": 13,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": \"100.00\"\n    },\n    {\n        \"bookID\": 14,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": \"100.00\"\n    },\n    {\n        \"bookID\": 16,\n        \"bookName\": \"12345\",\n        \"author\": \"manee\",\n        \"bookPrice\": \"100.00\"\n    },\n    {\n        \"bookID\": 17,\n        \"bookName\": \"123456\",\n        \"author\": \"manee\",\n        \"bookPrice\": \"100.00\"\n    },\n    {\n        \"bookID\": 18,\n        \"bookName\": \"1234567\",\n        \"author\": \"manee\",\n        \"bookPrice\": \"100.00\"\n    },\n    {\n        \"bookID\": 19,\n        \"bookName\": \"12345678\",\n        \"author\": \"manee\",\n        \"bookPrice\": \"100.00\"\n    },\n    {\n        \"bookID\": 20,\n        \"bookName\": \"123456789\",\n        \"author\": \"manee\",\n        \"bookPrice\": \"100.00\"\n    },\n    {\n        \"bookID\": 21,\n        \"bookName\": \"1234567899\",\n        \"author\": \"manee\",\n        \"bookPrice\": \"100.50\"\n    },\n    {\n        \"bookID\": 22,\n        \"bookName\": \"12345678999\",\n        \"author\": \"manee\",\n        \"bookPrice\": \"100.00\"\n    }\n]"
+				}
+			]
 		}
 	],
 	"protocolProfileBehavior": {}
