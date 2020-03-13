@@ -1,0 +1,1030 @@
+{
+	"info": {
+		"_postman_id": "59e6ca47-d110-4dd6-a13c-86fb2e965bcd",
+		"name": "db_proj",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "[GET] getAllBook",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:5000/getAllBook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"getAllBook"
+					]
+				},
+				"description": "get all the book info"
+			},
+			"response": [
+				{
+					"name": "[GET] getAllBook",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5000/getAllBook",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"getAllBook"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2470"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9a6-R3GfFNZ2Oo+/rK6rqWSWpdy9J2U\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 Mar 2020 07:23:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"bookID\": 1,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": 100,\n        \"fk_book_username\": \"seven.m\",\n        \"numberAvailable\": 2\n    },\n    {\n        \"bookID\": 2,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": 100,\n        \"fk_book_username\": \"seven.m\",\n        \"numberAvailable\": 2\n    },\n    {\n        \"bookID\": 3,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": 100,\n        \"fk_book_username\": \"seven.m\",\n        \"numberAvailable\": 2\n    },\n    {\n        \"bookID\": 4,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": 100,\n        \"fk_book_username\": \"seven.m\",\n        \"numberAvailable\": null\n    },\n    {\n        \"bookID\": 5,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": 100,\n        \"fk_book_username\": \"seven.m\",\n        \"numberAvailable\": null\n    },\n    {\n        \"bookID\": 6,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": 100,\n        \"fk_book_username\": \"seven.m\",\n        \"numberAvailable\": null\n    },\n    {\n        \"bookID\": 7,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": 100,\n        \"fk_book_username\": \"seven.m\",\n        \"numberAvailable\": null\n    },\n    {\n        \"bookID\": 8,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": 100,\n        \"fk_book_username\": \"seven.m\",\n        \"numberAvailable\": null\n    },\n    {\n        \"bookID\": 9,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": 100,\n        \"fk_book_username\": \"seven.m\",\n        \"numberAvailable\": null\n    },\n    {\n        \"bookID\": 10,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": 100,\n        \"fk_book_username\": \"seven.m\",\n        \"numberAvailable\": null\n    },\n    {\n        \"bookID\": 11,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": 100,\n        \"fk_book_username\": \"seven.m\",\n        \"numberAvailable\": null\n    },\n    {\n        \"bookID\": 12,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": 100,\n        \"fk_book_username\": \"seven.m\",\n        \"numberAvailable\": null\n    },\n    {\n        \"bookID\": 13,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": 100,\n        \"fk_book_username\": \"seven.m\",\n        \"numberAvailable\": null\n    },\n    {\n        \"bookID\": 14,\n        \"bookName\": \"1234\",\n        \"author\": \"manee\",\n        \"bookPrice\": 100,\n        \"fk_book_username\": \"seven.m\",\n        \"numberAvailable\": null\n    },\n    {\n        \"bookID\": 16,\n        \"bookName\": \"12345\",\n        \"author\": \"manee\",\n        \"bookPrice\": 100,\n        \"fk_book_username\": \"seven.m\",\n        \"numberAvailable\": null\n    },\n    {\n        \"bookID\": 17,\n        \"bookName\": \"123456\",\n        \"author\": \"manee\",\n        \"bookPrice\": 100,\n        \"fk_book_username\": \"seven.m\",\n        \"numberAvailable\": null\n    },\n    {\n        \"bookID\": 18,\n        \"bookName\": \"1234567\",\n        \"author\": \"manee\",\n        \"bookPrice\": 100,\n        \"fk_book_username\": \"seven.m\",\n        \"numberAvailable\": null\n    },\n    {\n        \"bookID\": 19,\n        \"bookName\": \"12345678\",\n        \"author\": \"manee\",\n        \"bookPrice\": 100,\n        \"fk_book_username\": \"seven.m\",\n        \"numberAvailable\": null\n    },\n    {\n        \"bookID\": 20,\n        \"bookName\": \"123456789\",\n        \"author\": \"manee\",\n        \"bookPrice\": 100,\n        \"fk_book_username\": \"seven.m\",\n        \"numberAvailable\": null\n    },\n    {\n        \"bookID\": 21,\n        \"bookName\": \"1234567899\",\n        \"author\": \"manee\",\n        \"bookPrice\": 100.5,\n        \"fk_book_username\": \"seven.m\",\n        \"numberAvailable\": null\n    },\n    {\n        \"bookID\": 22,\n        \"bookName\": \"12345678999\",\n        \"author\": \"manee\",\n        \"bookPrice\": 100,\n        \"fk_book_username\": \"seven.m\",\n        \"numberAvailable\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "[POST] checkStock",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "bookID",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "seven.m",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/checkStock",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"checkStock"
+					]
+				},
+				"description": "check how many of book left in category"
+			},
+			"response": [
+				{
+					"name": "[POST] checkStock",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "bookID",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "seven.m",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/checkStock",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"checkStock"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "23"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"17-mF9pnT7wTuR/OoyBxAkUSh5r7wM\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 Mar 2020 07:23:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"numberAvailable\": 2\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "[GET] getAllUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/getAllUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"getAllUser"
+					]
+				},
+				"description": "get all user"
+			},
+			"response": [
+				{
+					"name": "[GET] getAllUser",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/getAllUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"getAllUser"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "918"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"396-+vqD4T3TNo1RQt86wI0W/VjIRnY\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 Mar 2020 07:19:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"custFName\": \"clear\",\n        \"custLName\": \"brown\",\n        \"address\": \"64/2 Bangkok\",\n        \"balance\": null,\n        \"pwd\": \"1234\",\n        \"username\": \"clear.b\"\n    },\n    {\n        \"custFName\": \"fame\",\n        \"custLName\": \"fame\",\n        \"address\": \"fame\",\n        \"balance\": \"00000000.00\",\n        \"pwd\": \"1234\",\n        \"username\": \"fame\"\n    },\n    {\n        \"custFName\": \"james\",\n        \"custLName\": \"green\",\n        \"address\": \"null\",\n        \"balance\": \"00000999.00\",\n        \"pwd\": \"1234\",\n        \"username\": \"james.g\"\n    },\n    {\n        \"custFName\": \"john\",\n        \"custLName\": \"farmer\",\n        \"address\": \"null\",\n        \"balance\": \"00000000.00\",\n        \"pwd\": \"1234\",\n        \"username\": \"john101\"\n    },\n    {\n        \"custFName\": \"joo\",\n        \"custLName\": \"doo\\n\",\n        \"address\": \"null\",\n        \"balance\": \"00000400.00\",\n        \"pwd\": \"1234\",\n        \"username\": \"joo101\"\n    },\n    {\n        \"custFName\": \"manee\",\n        \"custLName\": \"seven\",\n        \"address\": \"null\",\n        \"balance\": \"00000700.00\",\n        \"pwd\": \"1234\",\n        \"username\": \"seven.m\"\n    },\n    {\n        \"custFName\": \"tom\",\n        \"custLName\": \"jerry\",\n        \"address\": null,\n        \"balance\": null,\n        \"pwd\": \"456\",\n        \"username\": \"tom110\"\n    },\n    {\n        \"custFName\": \"semloh\",\n        \"custLName\": \"mar\",\n        \"address\": \"777/7 bangkok\",\n        \"balance\": \"00000000.00\",\n        \"pwd\": \"1234\",\n        \"username\": \"toor\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "[POST] getUserBalance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "seven.m",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/getUserBalance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"getUserBalance"
+					]
+				},
+				"description": "get balance of that user"
+			},
+			"response": [
+				{
+					"name": "[POST] getUserBalance",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "seven.m",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/getUserBalance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"getUserBalance"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "13"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d-nNsSJT5o7DSWku6HANOm1knuaqc\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 Mar 2020 07:22:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "\"00000700.00\""
+				}
+			]
+		},
+		{
+			"name": "[POST] login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "usr",
+							"value": "fame",
+							"type": "text"
+						},
+						{
+							"key": "pwd",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					]
+				},
+				"description": "login\nsucess: 200\nfail : 400"
+			},
+			"response": [
+				{
+					"name": "[POST] login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "usr",
+									"value": "fame",
+									"type": "text"
+								},
+								{
+									"key": "pwd",
+									"value": "1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4-nU4eI71bcnBGqeO0t9tXvY1u5oQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 Mar 2020 07:25:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "pass"
+				}
+			]
+		},
+		{
+			"name": "[POST] register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fName",
+							"value": "fametwo",
+							"type": "text"
+						},
+						{
+							"key": "lName",
+							"value": "fametwo",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "fametwo",
+							"type": "text"
+						},
+						{
+							"key": "pwd",
+							"value": "1234",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "444 thailand",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"register"
+					]
+				},
+				"description": "register"
+			},
+			"response": [
+				{
+					"name": "[POST] register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "fName",
+									"value": "fametwo",
+									"type": "text"
+								},
+								{
+									"key": "lName",
+									"value": "fametwo",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "fametwo",
+									"type": "text"
+								},
+								{
+									"key": "pwd",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "444 thailand",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "17"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"11-e8u2y5ZLVwym8ZqBENPEY7Qsfz0\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 Mar 2020 07:28:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Done: user added."
+				}
+			]
+		},
+		{
+			"name": "[POST] addBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "bookName",
+							"value": "my ice-creame",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "mr.j",
+							"type": "text"
+						},
+						{
+							"key": "bookPrice",
+							"value": "100.1",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "fametwo",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/addBook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"addBook"
+					]
+				},
+				"description": "add book"
+			},
+			"response": [
+				{
+					"name": "[POST] addBook",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "bookName",
+									"value": "my ice-creame",
+									"type": "text"
+								},
+								{
+									"key": "author",
+									"value": "mr.j",
+									"type": "text"
+								},
+								{
+									"key": "bookPrice",
+									"value": "100.1",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "fametwo",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/addBook",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"addBook"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "17"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"11-a9D+fH4deOcEhGW+Z+sVcHQmkFU\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 Mar 2020 07:30:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Done: book added."
+				}
+			]
+		},
+		{
+			"name": "[POST] order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "bookID",
+							"value": "[1,2]",
+							"description": "should be list ONLY!!!!!",
+							"type": "text"
+						},
+						{
+							"key": "buyerUsername",
+							"value": "james.g",
+							"type": "text"
+						},
+						{
+							"key": "payment",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"order"
+					]
+				},
+				"description": "create order"
+			},
+			"response": []
+		},
+		{
+			"name": "[POST] updateBalance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "seven.m",
+							"type": "text"
+						},
+						{
+							"key": "addedBalance",
+							"value": "999",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/updateBalance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"updateBalance"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "[POST] updateBalance",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "seven.m",
+									"type": "text"
+								},
+								{
+									"key": "addedBalance",
+									"value": "999",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/updateBalance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"updateBalance"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "7"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7-EuC2O5fH7WNjCpv4gEGKlED1Lu0\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 Mar 2020 07:38:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "sucess."
+				}
+			]
+		},
+		{
+			"name": "[POST] acceptOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "orderID",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/acceptOrder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"acceptOrder"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "[POST] acceptOrder",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "orderID",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/acceptOrder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"acceptOrder"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "21"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"15-p47Iy2uDbYxOlOl0WPa3wGS0NRE\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 Mar 2020 07:40:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "added money to seller"
+				}
+			]
+		},
+		{
+			"name": "[POST] deleteBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "bookID",
+							"value": "25",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/deleteBook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"deleteBook"
+					]
+				},
+				"description": "delete book"
+			},
+			"response": [
+				{
+					"name": "[POST] deleteBook",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "bookID",
+									"value": "25",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/deleteBook",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"deleteBook"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "8"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8-SOp4Dzw8Mp2Ja1M3vP6EDDrCtJI\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 Mar 2020 07:41:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Deleted."
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
