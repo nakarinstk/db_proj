@@ -8,6 +8,12 @@ app.use(morgan("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: "True" }));
 app.listen(PORT, "localhost", () => console.log("listening on PORT", PORT));
+
+const middle = (req, res, next) => {
+  console.log(new Date());
+  next();
+};
+app.use(middle);
 //////////////////////////////////////////////////////
 const pool = mysql.createPool({
   host: "localhost",
@@ -80,18 +86,6 @@ app.post("/checkStock", async (req, res) => {
 });
 //////////////////////////////////////////////////////
 //tested
-app.get("/getAllUser", async (req, res) => {
-  try {
-    result = await pool.query(`select * from customer;`);
-    json_ = await getJson(result[0]);
-    await res.send(json_);
-  } catch (error) {
-    console.log(error);
-    res.sendStatus(500);
-  }
-});
-//////////////////////////////////////////////////////
-//tested
 app.post("/getUserBalance", async (req, res) => {
   try {
     if (!req.body.username) {
@@ -103,7 +97,7 @@ app.post("/getUserBalance", async (req, res) => {
       );
       rows = await getJson(result[0]);
       try {
-        await res.json(rows[0]["balance"] || 0);
+        await res.json([{ balance: parseFloat(rows[0]["balance"]) }] || 0);
       } catch (error) {
         await res.status(200).send("Username not found.");
       }
@@ -256,7 +250,7 @@ app.post("/order", async (req, res) => {
     _buyerUsername = req.body.buyerUsername;
     _payment = parseInt(req.body.payment);
     _date = new Date();
-    _bookList = JSON.parse(req.body.bookID); // INPUT SHOULD BE LIST ONLY
+    _bookList = req.body.bookID; // INPUT SHOULD BE LIST ONLY
     _isAllBookAvailable = true;
     _isBuyerUsernameExits = true;
     _isEnoughMoney = true;
@@ -307,7 +301,7 @@ app.post("/order", async (req, res) => {
         if (_buyerBalance < _totalPrice) {
           _isEnoughMoney = false;
         }
-        if (!_isBuyerUsernameExits && !_isEnoughMoney) {
+        if (!_isBuyerUsernameExits || !_isEnoughMoney) {
           res.status(403).send("invalid buyer");
         } else {
           // 2. get seller Balance
