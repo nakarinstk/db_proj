@@ -42,7 +42,7 @@ app.post("/getUserBook", async (req, res) => {
       res.status(403).send("Username not found.");
     } else {
       result = await pool.query(
-        `select bookID,bookName,author,bookPrice from book where fk_book_username= "${req.body.username}";`
+        `select bookID,bookName,author,bookPrice,numberAvailable from book left join category on book.bookID = category.fk_cat_bookID where fk_book_username= "${req.body.username}";`
       );
       json_ = await getJson(result[0]);
       await res.send(json_);
