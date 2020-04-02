@@ -340,7 +340,7 @@ app.post("/order", async (req, res) => {
             );
             // 3.3.2 create record in order table
             result = await pool.query(
-              `insert into orderlist (fk_payID,fk_bookID,fk_buyer_username,fk_seller_username) values ("${_payment}","${_bookList[i]}","${_buyerUsername}","${_sellerUsername[i]}");`
+              `insert into orderlist (fk_payID,fk_bookID,fk_buyer_username) values ("${_payment}","${_bookList[i]}","${_buyerUsername}");`
             );
           }
           await res.sendStatus(200);
