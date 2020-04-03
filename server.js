@@ -14,6 +14,7 @@ const middle = (req, res, next) => {
   next();
 };
 app.use(middle);
+
 //////////////////////////////////////////////////////
 const pool = mysql.createPool({
   host: "localhost",
@@ -412,6 +413,19 @@ app.post("/deleteBook", async (req, res) => {
         }
       );
     }
+  } catch (error) {
+    console.log(error);
+    res.sendStatus(500);
+  }
+});
+
+app.get("/getOrder", async (req, res) => {
+  try {
+    result = await pool.query(
+      `select orderID,date,fk_buyer_username,paymentName,bookName,fk_book_username as seller from orderlist o left join paymethod p on o.fk_payID = p.paymethodID left join book b on o.fk_bookID = b.bookID ;`
+    );
+    json_ = await getJson(result[0]);
+    await res.send({ data: json_ });
   } catch (error) {
     console.log(error);
     res.sendStatus(500);
